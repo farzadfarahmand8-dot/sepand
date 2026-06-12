@@ -1,7 +1,7 @@
 <!doctype html>
 
 
-<html dir="rtl">
+<html dir="rtl" 1rem="">
 
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
                             <path
                                 d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                         </svg>
-                        <div>ورود/ثبت نام</div>
+                        <a href="./login.html">ورود/ثبت نام</a>
                     </div>
 
                     <div class="flex items-center gap-2">
@@ -84,7 +84,7 @@
                         <path
                             d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                     </svg>
-                    <div>ورود/ثبت نام</div>
+                    <a href="./login.html">ورود/ثبت نام</a>
                 </div>
 
                 <div class="flex items-center gap-2">
@@ -269,38 +269,209 @@
                 <div id="overlay" class="fixed inset-0 bg-black/60 hidden z-40" onclick="closeMenu()"></div>
 
                 <!-- سایدبار -->
-                <div id="sidebar" class="fixed top-0 right-0 h-full w-80 bg-white shadow-xl z-50
-        translate-x-full transition-transform duration-300">
+                <div id="sidebar"
+                    class="fixed top-0 right-0 h-full w-[320px] bg-[#f8f8f8] shadow-xl z-50 overflow-y-auto translate-x-full transition-transform duration-300">
 
-                    <div class="p-4 flex justify-between border-b">
-                        <span>منو</span>
-                        <button onclick="closeMenu()">✕</button>
-                    </div>
+                    <div class="p-6">
 
-                    <div class="p-4 space-y-4">
-                        <a href="#">صفحه اصلی</a>
-                        <a href="#">محصولات</a>
-                        <a href="#">تماس</a>
+                        <!-- Title -->
+                        <h1 class="text-4xl font-bold text-center mb-10">
+                            دسته ها
+                        </h1>
+
+                        <!-- Categories -->
+                        <div class="space-y-5 mb-10">
+
+                            <label
+                                class="flex flex-row-reverse justify-between items-center border-b border-[#c8f2df] pb-2">
+                                <input type="checkbox" class="accent-[#7BE7B8]">
+                                <span class="text-sm">موبایل</span>
+                            </label>
+
+                            <label
+                                class="flex flex-row-reverse justify-between items-center border-b border-[#c8f2df] pb-2">
+                                <input type="checkbox" class="accent-[#7BE7B8]">
+                                <span class="text-sm">لپتاپ</span>
+                            </label>
+
+                            <label
+                                class="flex flex-row-reverse justify-between items-center border-b border-[#c8f2df] pb-2">
+                                <input type="checkbox" class="accent-[#7BE7B8]">
+                                <span class="text-sm">ساعت هوشمند</span>
+                            </label>
+
+                            <label
+                                class="flex flex-row-reverse justify-between items-center border-b border-[#c8f2df] pb-2">
+                                <input type="checkbox" class="accent-[#7BE7B8]">
+                                <span class="text-sm">لوازم جانبی موبایل</span>
+                            </label>
+
+                            <label
+                                class="flex flex-row-reverse justify-between items-center border-b border-[#c8f2df] pb-2">
+                                <input type="checkbox" class="accent-[#7BE7B8]">
+                                <span class="text-sm">لوازم جانبی کامپیوتر و لپتاپ</span>
+                            </label>
+
+                            <label
+                                class="flex flex-row-reverse justify-between items-center border-b border-[#c8f2df] pb-2">
+                                <input type="checkbox" class="accent-[#7BE7B8]">
+                                <span class="text-sm">اسپیکر و سیستم صوتی</span>
+                            </label>
+
+                        </div>
+
+                        <!-- Price Card -->
+                        <div class="bg-white rounded-[30px] border-2 border-[#d9f5e8] p-6 mb-8">
+
+                            <h2 class="text-2xl font-bold text-right mb-8">
+                                قیمت
+                            </h2>
+
+                            <input type="range" min="0" max="74900000" value="74900000" class="w-full accent-[#6FE6B4]">
+
+                            <p class="text-center mt-5 text-xl">
+                                از 0 تومان - 74,900,000 تومان
+                            </p>
+
+                            <!-- Colors -->
+                            <div class="mt-10">
+
+                                <h3 class="text-xl text-right mb-5">
+                                    رنگ
+                                </h3>
+
+                                <div class="flex gap-3 justify-center">
+
+                                    <div class="w-7 h-7 rounded-full border-2 border-gray-400 bg-white"></div>
+
+                                    <div class="w-7 h-7 rounded-full bg-black"></div>
+
+                                    <div class="w-7 h-7 rounded-full bg-red-600"></div>
+
+                                    <div class="w-7 h-7 rounded-full bg-orange-500"></div>
+
+                                    <div class="w-7 h-7 rounded-full bg-orange-300"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Country -->
+                        <div class="bg-white rounded-[30px] border-2 border-[#d9f5e8] p-6 mb-8">
+
+                            <h2 class="text-2xl font-bold text-center mb-8">
+                                کشور سازنده
+                            </h2>
+
+                            <div class="space-y-5">
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>آمریکا</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>ژاپن</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>چین</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>آلمان</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <span>کره جنوبی</span>
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Brand -->
+                        <div class="bg-white rounded-[30px] border-2 border-[#d9f5e8] p-6">
+
+                            <h2 class="text-2xl font-bold text-center mb-8">
+                                برند
+                            </h2>
+
+                            <div class="space-y-5">
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>اپل</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>ایسر</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>اچ پی</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>راک</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>سامسونگ</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>شیائومی</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>ایسران</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>موتورولا</span>
+                                </label>
+
+                                <label class="flex flex-row-reverse justify-between border-b border-[#c8f2df] pb-2">
+                                    <input type="checkbox" class="accent-[#7BE7B8]">
+                                    <span>هوآوی</span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
 
-            </div>
+                <!-- JS -->
+                <script>
+                    const sidebar = document.getElementById("sidebar");
+                    const overlay = document.getElementById("overlay");
 
-            <!-- JS -->
-            <script>
-                const sidebar = document.getElementById("sidebar");
-                const overlay = document.getElementById("overlay");
+                    function openMenu() {
+                        sidebar.classList.remove("translate-x-full");
+                        overlay.classList.remove("hidden");
+                    }
 
-                function openMenu() {
-                    sidebar.classList.remove("translate-x-full");
-                    overlay.classList.remove("hidden");
-                }
-
-                function closeMenu() {
-                    sidebar.classList.add("translate-x-full");
-                    overlay.classList.add("hidden");
-                }
-            </script>
+                    function closeMenu() {
+                        sidebar.classList.add("translate-x-full");
+                        overlay.classList.add("hidden");
+                    }
+                </script>
             </div>
 
             <hr class="border-t-4 border-[#5cc1b9] rounded-full w-32 mt-2">
